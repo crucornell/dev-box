@@ -24,12 +24,13 @@ Getting Started
    dev-box-master directory_ (like, right next to Vagrantfile).  One good way
    to do that, especially if you're unfamiliar with git, is to use [GitHub for
    Windows](http://windows.github.com/), and tell it to clone the repository
-   right into the middle of dev-box-master.  You're doing this because
-   whichever folder Vagrantfile is in will be shared between your computer and
-   the VM we're creating. You want to be able to edit files and whatnot from
-   both your computer and the VM. I'm going to assume you've cloned the
-   crucornell website code into a directory called "crucornell-code" inside
-   dev-box-master.
+   right into the middle of dev-box-master (right-click on the
+   crucornell.github.com repo in GitHub for Windows, and select "clone to
+   ...").  You're doing this because whichever folder Vagrantfile is in will be
+   _shared_ between your computer and the VM we're creating. You want to be able
+   to edit files and whatnot from both your computer and the VM. I'm going to
+   assume you've cloned the crucornell website code into a directory called
+   "crucornell-code" inside dev-box-master.
 3. Download and install [VirtualBox](http://www.virtualbox.org/wiki/Downloads)
 4. Download and install [Vagrant](http://downloads.vagrantup.com)
 5. Pop open a terminal window and navigate into dev-box-master.
