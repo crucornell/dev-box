@@ -43,7 +43,9 @@ Getting Started
    here](http://localhost:4000).  Pretty slick, eh?
 
 When you're done with your VM, you can exit the ssh session (`exit`), and then
-run `vagrant destroy`. Next time you just do `vagrant up` from the dev-box
+run `vagrant destroy`. (Alternatively, if you just want to shutdown the VM, run
+`vagrant halt`.) Next time you just do `vagrant up` (or `vagrant up
+--no-provision` if you used `vagrant halt` earlier.) from the dev-box
 directory, `vagrant ssh`, and you'll be able to get back to work again from
 `/vagrant/crucornell-code` inside the VM via the SSH session.
 
@@ -54,7 +56,8 @@ frequently a lot faster than using `vagrant up` to rebuild the VM every time.
 Development Workflow
 --------------------
 
-1. Resume the VM from VirtualBox Manager or run `vagrant up` to rebuild it.
+1. Resume the VM from VirtualBox Manager (or `vagrant up --no-provision`), or
+   run `vagrant up` to rebuild it.
 2. On your own machine, run GitHub for Windows and update crucornell-code.
 3. Run `vagrant ssh` to connect to the running VM, and navigate to the
    crucornell-code directory inside the VM with `cd /vagrant/crucornell-code`.
